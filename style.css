@@ -1,0 +1,29 @@
+/*
+.right_section
+#page_content
+.left_side_bar
+#header*/
+
+/*
+
+#header{
+    padding: 0px 0px 5px;
+}
+*/
+/*
+
+#page_content{
+    padding :10px;
+}
+*/
+
+#page_content .right_section{
+/*width: 625px;*/
+    float:right;
+/*    padding: 15px;*/
+}
+
+.left_side_bar{
+/*    width: 210px;*/
+    float: left;
+}

@@ -1,0 +1,49 @@
+<div>
+<div>
+    <h2>Update Employees Details</h2>
+    <br>
+    <table class="table table-striped" id="myTable">
+        <thead>
+            <td>Name</td>
+            <td>EmployeeId</td>
+            <td>Designation</td>
+        </thead>
+        <tr ng-repeat="x in empname" ng-click="upd(x)">
+            <td>{{ x.name}}</td>
+            <td>{{x.employeeID}}</td>
+            <td>{{x.designation}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class='col-sm-12' style="padding-left:30px">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="col-md-2 control-label">Name</label>
+          <div class="col-md-4">
+            <input type="text" class="form-control" name="name" ng-model="name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">EmployeeID</label>
+          <div class="col-md-4">
+            <input type="text" class="form-control" name="employeeeID" ng-model="employeeID" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">Designaiton</label>
+          <div class="col-md-4">
+            <input type="text" class="form-control" name="designation" ng-model="designation" />
+          </div>
+        </div>
+        <div class="form-group" style="padding-left:15px">
+          <div>
+
+            <input type="button" value="Edit" 
+             ng-click="edit()" class="btn btn-primary" />
+
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
